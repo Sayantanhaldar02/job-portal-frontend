@@ -4,7 +4,6 @@ import {
 } from "@reduxjs/toolkit/query/react"
 
 const authToken = localStorage.getItem('authToken')
-console.log(authToken)
 // const token = authToken ? `Bearer ${authToken && authToken}` : "";
 export const empProfileApi = createApi({
     reducerPath: 'empProfileApi',

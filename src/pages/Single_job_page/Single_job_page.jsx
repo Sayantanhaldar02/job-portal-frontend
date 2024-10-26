@@ -37,14 +37,14 @@ const SingleJobDetails = () => {
             {
                 location.state &&
                 <div className='flex w-full justify-between px-[70px] mb-14 mq900:px-0 mq900:flex-col'>
-                    <div className=" p-6 bg-white rounded-lg shadow-md">
+                    <div className=" p-6 bg-white rounded-lg ">
                         <div className='flex items-center justify-between'>
                             <div>
                                 <h1 className="text-2xl font-bold mb-4">{location.state.job_title}</h1>
                                 <p className="text-gray-700 mb-4">{location.state.description}</p>
                             </div>
                             <div>
-                                <img src={`${image_base_url}{${location.state.company_logo}`} alt="logo" className='h-[100px] w-[100px] rounded-[50%] mq900:h-[70px] mq900:w-[100px] ' />
+                                <img src={location.state.company_logo} alt="logo" className='h-[100px] w-[100px] rounded-[50%] mq900:h-[70px] mq900:w-[100px] ' />
                             </div>
                         </div>
                         <div className="mb-4">
@@ -83,12 +83,12 @@ const SingleJobDetails = () => {
                         </div>
                     </div>
 
-                    <div className='mq900:my-9'>
+                    {/* <div className='mq900:my-9'>
                         <h2 className='text-[25px] mq900:text-center mq900:mb-2'>Related jobs</h2>
                         <div className='grid grid-cols-2 gap-4 mq900:grid-cols-1'>
                             {isSuccess && data.all_jobs && data.all_jobs.slice(0, 4).map((job, index) => <Job_card data={job} key={index} />)}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             }
             {/* <Footer /> */}

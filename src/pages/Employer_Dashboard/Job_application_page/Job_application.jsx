@@ -48,7 +48,7 @@ const JobApplicationTable = () => {
   return (
     <>
 
-      <div className="container mx-auto p-4 mt-10">
+      <div className=" mx-auto p-10 bg-gray-100">
         <div className='w-full flex items-center justify-between'>
           <h1 className="text-2xl font-bold mb-4">Job Applications</h1>
         </div>
@@ -112,8 +112,8 @@ function ApplicationTableBody({ application, handleStatusUpdate }) {
         <TableCell>{new Date(application.createdAt).toLocaleDateString()}</TableCell>
         <TableCell align='center'>
           <Tooltip title="Download Resume">
-            <a href={`${image_base_url}${application.resume}`} download={`${application.first_name} ${application.last_name}_resume`} target='_blank' rel="noopener noreferrer">
-              <button className='font-semibold text-[20px]' value="view_resume" onClick={(e) => handelGetStatusValue(e, application._id)} >
+            <a href={application.resume} download={`${application.first_name} ${application.last_name}_resume`} target='_blank' rel="noopener noreferrer">
+              <button className='font-semibold text-[20px]' value="view_resume" >
                 <span className='text-green-500' ><DownloadIcon fontSize='inherit' /></span>
               </button>
             </a>

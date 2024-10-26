@@ -48,7 +48,8 @@ const Login = () => {
             navigate(user_data.role === "employer" ? "/employer-dashboard" : "/")
         }
         if (details.isError) {
-            toast.error(details.error.data.message)
+            // console.log(details.error.data)
+            toast.error(details.error.data)
         }
     }, [details.isSuccess, details.isError]);
 

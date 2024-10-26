@@ -31,7 +31,7 @@ const Employer_job_section = () => {
 
     return (
         <>
-            <div className="container mx-auto p-4 mt-10">
+            <div className="mx-auto w-[100%] p-10 bg-gray-100">
                 <div className='w-full flex items-center justify-between'>
                     <h1 className="text-2xl font-bold mb-4">Manage Jobs</h1>
                     <button className="mb-4 border-2 border-primary_color p-2 px-4 rounded-[5px] hover:bg-primary_color hover:text-white transition-all " onClick={() => navigate("/employer-job-form")}>

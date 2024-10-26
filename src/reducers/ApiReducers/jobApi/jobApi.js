@@ -54,7 +54,7 @@ export const jobApi = createApi({
                     'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
                 }
             }),
-            providesTags: ["Jobs"],
+            invalidatesTags: ["Jobs"],
         }),
         updateJob: builder.mutation({
             query: (data) => ({
@@ -65,7 +65,7 @@ export const jobApi = createApi({
                     'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
                 }
             }),
-            providesTags: ["Jobs"],
+            invalidatesTags: ["Jobs"],
         }),
         deleteJob: builder.mutation({
             query: (data) => ({
@@ -76,7 +76,7 @@ export const jobApi = createApi({
                     'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
                 }
             }),
-            providesTags: ["Jobs"],
+            invalidatesTags: ["Jobs"],
         })
     })
 })

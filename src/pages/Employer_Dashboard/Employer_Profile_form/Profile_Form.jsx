@@ -27,7 +27,7 @@ const Employer_Profile_Form = () => {
     setProfile_details({ ...profile_details, [e.target.name]: e.target.value })
   }
 
-  const [company_logo, setCompanyLogo] = useState(location.state && location.state.company_logo || null)
+  const [company_logo, setCompanyLogo] = useState(location.state && location.state.company_logo || "")
   const onChnageHandelerForImage = (e) => {
     setCompanyLogo(e.target.files[0])
   }
@@ -51,6 +51,10 @@ const Employer_Profile_Form = () => {
     e.preventDefault();
     if (location.state) {
       await updateProfile(formData)
+      // for (var pair of formData.entries()) {
+      //   console.log(pair[0] + ', ' + pair[1]);
+      // }
+      // console.log({...profile_details,company_logo})
     }
     await createEmployerProfile(formData)
     // console.log('Profile Details:', { ...profile_details, company_logo });
@@ -99,8 +103,7 @@ const Employer_Profile_Form = () => {
       navigate("/employer-profile")
     }
     if (update_details.isError) {
-      toast.error(error.message)
-      console.log(error)
+      toast.error(update_details.error.data)
     }
 
   }, [update_details.isSuccess, update_details.isError])

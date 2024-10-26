@@ -84,7 +84,7 @@ const EmployerProfile = (props) => {
             </div>
             <div className="flex flex-col justify-center items-center ">
               <img
-                src={`${image_base_url}${company_logo}`}
+                src={company_logo}
                 alt="Profile"
                 className=" border-4 w-[200px] h-[200px] rounded-full mq900:w-[100px] mq900:h-[100px] "
               />

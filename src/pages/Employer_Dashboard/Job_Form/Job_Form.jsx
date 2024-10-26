@@ -39,8 +39,11 @@ const Employer_Job_Form = () => {
 
         if (location.state) {
             await updatejob({...job_details, id: location.state._id})
+            // console.log("update call")
+        } else {
+            await createjob(job_details)
+            // console.log("create call")
         }
-        await createjob(job_details)
     }
     const navigate = useNavigate()
 
@@ -72,7 +75,7 @@ const Employer_Job_Form = () => {
 
     useEffect(() => {
         if (update_Data.isSuccess) {
-            toast.success("Job Created!")
+            toast.success("Job Updated!")
             setjob_details({
                 job_title: "",
                 vacancy: "",
@@ -93,7 +96,7 @@ const Employer_Job_Form = () => {
             toast.error(update_Data.error.message)
         }
 
-    }, [update_Data.isSuccess,update_Data.isError])
+    }, [update_Data.isSuccess, update_Data.isError])
 
     return (
         <>

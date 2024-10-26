@@ -20,7 +20,7 @@ const Employer_Dashboard = () => {
     return (
         <>
             {/* <Navbar /> */}
-            <div className="h-[100vh] mb-[140px]">
+            <div className="min-h-[100vh] max-h-max">
                 <Dashboard />
                 {/* <JobApplicationTable/> */}
             </div>

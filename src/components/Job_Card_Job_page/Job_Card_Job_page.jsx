@@ -10,7 +10,7 @@ const Job_Card_Job_page = (props) => {
                         <div className="flex-shrink-0">
                             <img
                                 className="h-[60px] w-[60px] rounded-[50%]"
-                                src={`${image_base_url}${props.data.company_logo}`} // Replace with your logo URL
+                                src={props.data.company_logo} // Replace with your logo URL
                                 alt="Company Logo"
                             />
                         </div>

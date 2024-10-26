@@ -16,7 +16,7 @@ const Profile = ({ data, handelDeleteProfile, isSuccess }) => {
                 <div className="">
                     <div className="flex flex-col justify-center items-center ">
                         <img
-                            src={`${image_base_url}${data.profile_photo}`}
+                            src={data.profile_photo}
                             alt="Profile"
                             className=" border-4 w-[200px] h-[200px] rounded-full mq900:w-[100px] mq900:h-[100px] "
                         />
@@ -34,7 +34,7 @@ const Profile = ({ data, handelDeleteProfile, isSuccess }) => {
                             </div>
                             <div>
                                 <p className="text-gray-600">
-                                    <a target='_blank' href={`${image_base_url}${data.resume}`} download={`${data.first_name}_${data.last_name}_resume`}>
+                                    <a target='_blank' href={data.resume} download={`${data.first_name}_${data.last_name}_resume`}>
                                         <button className="px-[20px] py-[7px] border-[1px] cursor-pointer border-primary_color rounded-[5px] hover:bg-primary_color hover:text-white mq900:mt-3 ">
                                             <DownloadIcon /> Download Resume
                                         </button>

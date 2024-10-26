@@ -17,7 +17,7 @@ const Job_card = (props) => {
                     <div className="space-y-4">
                         <div className="flex flex-col items-center gap-4">
                             <img
-                                src={`${image_base_url}${props.data.company_logo}`}
+                                src={props.data.company_logo}
                                 width="100"
                                 height="100"
                                 alt="Company Logo"
