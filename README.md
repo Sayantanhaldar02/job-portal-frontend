@@ -1,8 +1,19 @@
-# React + Vite
+# Job Listing Portal 🏢💼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Job Listing Portal is a comprehensive platform designed for employers and jobseekers. Employers can manage job postings, review applications, and maintain their profiles. Jobseekers can browse and apply for jobs while managing their profiles, all within a streamlined, user-friendly interface. The project incorporates role-based authentication and authorization to ensure secure access and operations.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+### 👔 For Employers:
+- Job Management: Create, update, and delete job postings.
+- Application Management: Review applications, and accept or reject candidates.
+- Profile Management: Create, update, and manage employer profiles.
+
+### 🧑‍💻 For Jobseekers:
+- Job Application: Apply for jobs posted by employers.
+- Profile Management: Create and update personal profiles to enhance visibility.
+
+### 🔐 Authentication and Authorization:
+- Secure role-based access for employers and jobseekers.
+- Separate functionalities based on roles.
