@@ -19,5 +19,34 @@ Job Listing Portal is a comprehensive platform designed for employers and jobsee
 - Separate functionalities based on roles.
 
 
+
+## ✨ Getting Started
+
+- #### Clone the repository:
+
+```bash
+  git clone https://github.com/Sayantanhaldar02/job-portal-frontend.git
+```
+
+- #### Navigate to the project directory:
+
+```bash
+  cd job-portal-frontend
+```
+
+- #### Install dependencies:
+
+```bash
+ npm install
+```
+
+- #### Start the development server:
+
+```bash
+ npm run dev
+```
+    
+
+
 ## Demo
 [![Watch the video](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/joblistingportalss.png)](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/Job_portal_recording.mov)
