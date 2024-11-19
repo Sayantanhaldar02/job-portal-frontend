@@ -20,4 +20,4 @@ Job Listing Portal is a comprehensive platform designed for employers and jobsee
 
 
 ## Demo
-[![Watch the video](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/Job_portal_recording.mov)](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/Job_portal_recording.mov)
+[![Watch the video](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/joblistingportalss.png)](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/Job_portal_recording.mov)
