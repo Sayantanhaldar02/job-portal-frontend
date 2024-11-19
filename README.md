@@ -17,3 +17,7 @@ Job Listing Portal is a comprehensive platform designed for employers and jobsee
 ### 🔐 Authentication and Authorization:
 - Secure role-based access for employers and jobseekers.
 - Separate functionalities based on roles.
+
+
+## Demo
+[![Watch the video](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/Job_portal_recording.mov)](https://raw.githubusercontent.com/Sayantanhaldar02/job-portal-frontend/main/Job_portal_recording.mov)
